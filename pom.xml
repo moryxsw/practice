@@ -11,5 +11,6 @@
     <module>tool-desensitization</module>
     <module>strategy-springplugin</module>
     <module>question-builddefault</module>
+    <module>annotation-inheritance</module>
   </modules>
 </project>
