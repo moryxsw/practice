@@ -12,5 +12,6 @@
     <module>strategy-springplugin</module>
     <module>question-builddefault</module>
     <module>annotation-inheritance</module>
+      <module>usage-optional</module>
   </modules>
 </project>
