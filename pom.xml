@@ -13,5 +13,7 @@
     <module>question-builddefault</module>
     <module>annotation-inheritance</module>
       <module>usage-optional</module>
+      <module>usage-functon</module>
+    <module>strategy-enum</module>
   </modules>
 </project>
