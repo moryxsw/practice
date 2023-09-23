@@ -15,5 +15,6 @@
       <module>usage-optional</module>
       <module>usage-functon</module>
     <module>strategy-enum</module>
+    <module>usage-stream-collect</module>
   </modules>
 </project>
