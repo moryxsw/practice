@@ -24,5 +24,6 @@
     <module>usage-stream-collect</module>
       <module>tool-logAnnotation</module>
       <module>usage-map</module>
+      <module>tool-completableFuturee</module>
   </modules>
 </project>
