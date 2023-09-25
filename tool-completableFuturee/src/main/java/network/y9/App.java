@@ -61,4 +61,18 @@ public class App {
             return new BigDecimal(20);
         }), BigDecimal::add);
     }
+
+
+    /**
+     * 自定义线程工厂处理线程内异常
+     */
+    private static void testThreadFactory(){
+        ThreadFactory threadFactory = r ->{
+            Thread thread = new Thread(r);
+            thread.setUncaughtExceptionHandler((t ,e) ->{
+                System.out.println(e.getMessage());
+            });
+            return thread;
+        };
+    }
 }
