@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/annotation-inheritance/annotation-lock/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/annotation-inheritance/annotation-lock/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/annotation-inheritance/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/annotation-inheritance/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/question-builddefault/src/main/java" charset="UTF-8" />
@@ -13,8 +15,11 @@
     <file url="file://$PROJECT_DIR$/strategy-springplugin/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tool-desensitization/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tool-desensitization/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tool-logAnnotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tool-logAnnotation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/usage-functon/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/usage-functon/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/usage-map/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/usage-optional/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/usage-optional/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/usage-stream-collect/src/main/java" charset="UTF-8" />
