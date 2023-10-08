@@ -8,6 +8,8 @@ import java.util.Arrays;
  */
 public class App {
     public static void main( String[] args ) {
+
+        // 可以使用表达式目录树，bytebuddy 的 matcher
         //1. 定义规则  init rule
         NationalityRule nationalityRule = new NationalityRule();
         NameRule nameRule = new NameRule();
