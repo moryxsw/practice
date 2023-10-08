@@ -25,5 +25,7 @@
       <module>tool-logAnnotation</module>
       <module>usage-map</module>
       <module>tool-completableFuturee</module>
+      <module>strategy-generics</module>
+      <module>strategy-template</module>
   </modules>
 </project>

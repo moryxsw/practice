@@ -11,8 +11,10 @@
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/strategy-enum/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/strategy-enum/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/strategy-generics/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/strategy-springplugin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/strategy-springplugin/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/strategy-template/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tool-completableFuturee/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tool-desensitization/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tool-desensitization/src/main/resources" charset="UTF-8" />
