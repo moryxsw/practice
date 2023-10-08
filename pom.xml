@@ -27,5 +27,6 @@
       <module>tool-completableFuturee</module>
       <module>strategy-generics</module>
       <module>strategy-template</module>
+      <module>tool-rule</module>
   </modules>
 </project>
