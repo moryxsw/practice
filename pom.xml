@@ -28,5 +28,6 @@
       <module>strategy-generics</module>
       <module>strategy-template</module>
       <module>tool-rule</module>
+      <module>chain-valid</module>
   </modules>
 </project>
