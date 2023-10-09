@@ -30,5 +30,7 @@
       <module>tool-rule</module>
       <module>chain-valid</module>
       <module>programmatic-transaction</module>
+    <module>annotation-redislock</module>
+    <module>annotation-log</module>
   </modules>
 </project>

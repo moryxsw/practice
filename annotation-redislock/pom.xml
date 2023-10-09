@@ -1,0 +1,279 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>network.y9</groupId>
+        <artifactId>practice</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>annotation-redislock</artifactId>
+    <packaging>jar</packaging>
+
+    <name>annotation-redislock</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.3.23</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson-spring-boot-starter</artifactId>
+            <version>3.14.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>2.0.41</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+        <!--集成redis-->
+        <!--springboot中的redis依赖-->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+        </dependency>
+
+<!--        &lt;!&ndash; io常用工具类 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>commons-io</groupId>-->
+<!--            <artifactId>commons-io</artifactId>-->
+<!--            <version>2.5</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash;文件上传工具类 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>commons-fileupload</groupId>-->
+<!--            <artifactId>commons-fileupload</artifactId>-->
+<!--            <version>1.3.3</version>-->
+<!--        </dependency>-->
+
+
+
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+<!--        <dependency>-->
+<!--            <groupId>junit</groupId>-->
+<!--            <artifactId>junit</artifactId>-->
+<!--            <version>4.13</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+
+
+<!--        &lt;!&ndash;阿里数据库连接池 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba</groupId>-->
+<!--            <artifactId>druid-spring-boot-starter</artifactId>-->
+<!--            <version>${druid.version}</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash;验证码 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.github.penggle</groupId>-->
+<!--            <artifactId>kaptcha</artifactId>-->
+<!--            <version>${kaptcha.version}</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash;Shiro核心框架 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.shiro</groupId>-->
+<!--            <artifactId>shiro-core</artifactId>-->
+<!--            <version>${shiro.version}</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash; Shiro使用Srping框架 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.shiro</groupId>-->
+<!--            <artifactId>shiro-spring</artifactId>-->
+<!--            <version>${shiro.version}</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash; Shiro使用EhCache缓存框架 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.shiro</groupId>-->
+<!--            <artifactId>shiro-ehcache</artifactId>-->
+<!--            <version>${shiro.version}</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash; thymeleaf模板引擎和shiro框架的整合 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.github.theborakompanioni</groupId>-->
+<!--            <artifactId>thymeleaf-extras-shiro</artifactId>-->
+<!--            <version>${thymeleaf.extras.shiro.version}</version>-->
+<!--        </dependency>-->
+
+        <!-- SpringWeb模块 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency>
+
+        <!--常用工具类 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+
+        <!-- 解析客户端操作系统、浏览器等 -->
+<!--        <dependency>-->
+<!--            <groupId>eu.bitwalker</groupId>-->
+<!--            <artifactId>UserAgentUtils</artifactId>-->
+<!--            <version>${bitwalker.version}</version>-->
+<!--        </dependency>-->
+
+        <!-- pagehelper 分页插件 -->
+<!--        <dependency>-->
+<!--            <groupId>com.github.pagehelper</groupId>-->
+<!--            <artifactId>pagehelper-spring-boot-starter</artifactId>-->
+<!--            <version>${pagehelper.boot.version}</version>-->
+<!--        </dependency>-->
+
+        <!--集成redis Lettuce -->
+        <!--springboot中的redis依赖-->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+        </dependency>
+        <!-- lettuce pool 缓存连接池-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.commons</groupId>-->
+<!--            <artifactId>commons-pool2</artifactId>-->
+<!--            <version>${commons-pool2.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.netty</groupId>-->
+<!--            <artifactId>netty-all</artifactId>-->
+<!--            <version>${netty-all.version}</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash; 获取系统信息 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.github.oshi</groupId>-->
+<!--            <artifactId>oshi-core</artifactId>-->
+<!--            <version>${oshi.version}</version>-->
+<!--        </dependency>-->
+
+
+<!--        &lt;!&ndash; swagger2&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>io.springfox</groupId>-->
+<!--            <artifactId>springfox-swagger2</artifactId>-->
+<!--            <version>${swagger.version}</version>-->
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <groupId>io.swagger</groupId>-->
+<!--                    <artifactId>swagger-annotations</artifactId>-->
+<!--                </exclusion>-->
+<!--                <exclusion>-->
+<!--                    <groupId>io.swagger</groupId>-->
+<!--                    <artifactId>swagger-models</artifactId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash; swagger2-UI&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>io.springfox</groupId>-->
+<!--            <artifactId>springfox-swagger-ui</artifactId>-->
+<!--            <version>${swagger.version}</version>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>com.github.xiaoymin</groupId>-->
+<!--            <artifactId>swagger-bootstrap-ui</artifactId>-->
+<!--            <version>${swagger-bootstrap-ui.version}</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash;io常用工具类 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>commons-io</groupId>-->
+<!--            <artifactId>commons-io</artifactId>-->
+<!--            <version>${commons.io.version}</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash;文件上传工具类 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>commons-fileupload</groupId>-->
+<!--            <artifactId>commons-fileupload</artifactId>-->
+<!--            <version>${commons.fileupload.version}</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash; excel工具 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.poi</groupId>-->
+<!--            <artifactId>poi-ooxml</artifactId>-->
+<!--            <version>${poi.version}</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash;velocity代码生成使用模板 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.velocity</groupId>-->
+<!--            <artifactId>velocity</artifactId>-->
+<!--            <version>${velocity.version}</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash; 阿里JSON解析器 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba</groupId>-->
+<!--            <artifactId>fastjson</artifactId>-->
+<!--            <version>${fastjson.version}</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash; webmagic &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>us.codecraft</groupId>-->
+<!--            <artifactId>webmagic-core</artifactId>-->
+<!--            <version>${webmagic.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>us.codecraft</groupId>-->
+<!--            <artifactId>webmagic-extension</artifactId>-->
+<!--            <version>${webmagic.version}</version>-->
+<!--        </dependency>-->
+
+
+
+
+<!--        &lt;!&ndash; gson &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.google.code.gson</groupId>-->
+<!--            <artifactId>gson</artifactId>-->
+<!--            <version>${gson.version}</version>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
