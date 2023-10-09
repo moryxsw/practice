@@ -29,5 +29,6 @@
       <module>strategy-template</module>
       <module>tool-rule</module>
       <module>chain-valid</module>
+      <module>programmatic-transaction</module>
   </modules>
 </project>
